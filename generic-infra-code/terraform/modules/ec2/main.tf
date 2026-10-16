@@ -3,7 +3,7 @@ resource "aws_security_group" "instance-sg" {
   description = "Security Group for Instance"
 
   ingress {
-    from_port   = 23
+    from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
